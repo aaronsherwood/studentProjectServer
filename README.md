@@ -1,5 +1,5 @@
 # Student Project Server
-A quick node.js server to serve student work.
+A quick node.js server to serve student work full screen in a presentation/exhibition type of way.
 
 ## Requirements
 [Node.js](https://nodejs.org/en/)
