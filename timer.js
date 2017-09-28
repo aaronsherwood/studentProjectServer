@@ -3,27 +3,33 @@ var minutesUntilSwitchProject = 1;
 var timer;
 
 var load = function(){
-	setUrl();
-	setText();
+	setInfo();
+	resetTimer();
+}
+
+var switchProject = function(){
+	counter = (counter+1) % urls.length;
+	setInfo();	
+	resetTimer();
+}
+
+var previousProject = function(){
+	counter -= 1;
+	if (counter < 0) counter = urls.length-1;
+	if (counter >= urls.length) counter = 0;
+	setInfo();
+	resetTimer();	
+}
+
+var resetTimer = function(){
+	window.clearInterval(timer);
 	//millis * seconds * minutes (minutes is imporant part, change that above)
 	timer = setInterval(switchProject, 1000*60*minutesUntilSwitchProject);
 }
 
-document.onkeypress = function(evt) {
-    evt = evt || window.event;
-    var charCode = evt.keyCode || evt.which;
-    if (charCode == 13){//code for return key
-    	switchProject()
-		window.clearInterval(timer);
-		//millis * seconds * minutes (minutes is imporant part, change that above)
-		timer = setInterval(switchProject, 1000*60*minutesUntilSwitchProject);
-	 }  
-};
-
-var switchProject = function(){
-	counter = (counter+1) % urls.length;
+var setInfo = function(){
 	setUrl();
-	setText();	
+	setText();
 }
 
 var setUrl = function(){
