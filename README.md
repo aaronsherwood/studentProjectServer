@@ -13,4 +13,4 @@ Enter fullscreen URLs of student work in the info.csv file, as well as the names
 
 Well, ok, not magic. Just, you know, do `node server.js` in the directory to start server. Or `forever start server.js` to run in the background continuously.
 
-There is also a startServer.sh script, that you can use to start the server when the computer turns on. Just set it to executable (chmod 777 startServer.sh) and to open with Terminal. Then set it as a login item in System Preferences for the User. Also make sure the file path in that script matches where the server.js file actually is.
+There is also a startServer.sh script, that you can use to start the server automatically when the computer turns on. Make sure the file path in that script matches where the server.js file actually.
