@@ -16,3 +16,6 @@ Enter fullscreen URLs of student work in the info.csv file, as well as the names
 Well, ok, not magic. Just, you know, do `node server.js` in the directory to start server. Or `forever start server.js` to run in the background continuously.
 
 There is also a startServer.sh script, that you can use to start the server automatically when the computer turns on. Make sure the file path in that script matches where the server.js file actually is.
+
+## What Type of Things Can Be Shown
+Anything! The beauty of this method is that you can show any type of documentation that you want: a P5.js sketch, a video, a shader posted on Shader Toy, etc.
