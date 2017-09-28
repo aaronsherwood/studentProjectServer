@@ -1,0 +1,43 @@
+html
+ head
+  script(type='text/javascript', src= '/timer.js')
+  title #{title}
+  style.
+   body {
+    background: #000;
+    overflow: hidden;
+   }
+   @font-face {
+   font-family: franklinGothic;
+   src: url(ITCFranklinGothicStd-BkXCp.otf);
+   }
+   p {
+   font-family: franklinGothic;
+   transform: translateY(50%);
+   }
+   iframe {
+   border: none;
+   }
+   #info {
+    border-radius: 5px;
+    position: absolute; 
+    left: 2%; 
+    bottom: 2%; 
+    background-color: rgba(0,0,0,0.4); 
+    color: rgba(255,255,255,0.7); 
+    padding-left: 10px; 
+    padding-right: 10px;
+    font-family: 'ITCFranklinGothicStd-BkXCp';
+    font-size: 32px; 
+    line-height: 10px;"
+   }
+ body
+  div#main
+   iframe(width='100%' height='100%', scrolling='no', frameBorder='0', seamless='seamless', src= srcStr)
+   div#info
+    p Decoding Nature Class Work: #{name}
+ 
+    
+
+
+  
