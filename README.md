@@ -1,5 +1,5 @@
-# Decoding Nature Server
-A quick node.js server to serve student work from the class.
+# Student Project Server
+A quick node.js server to serve student work.
 
 ## Requirements
 [Node.js](https://nodejs.org/en/)
@@ -21,4 +21,6 @@ There is also a startServer.sh script, that you can use to start the server auto
 Anything! The beauty of this method is that you can show any type of documentation that you want: a P5.js sketch, a video, a shader posted on Shader Toy, etc. All that is needed is a URL of the video/photo/GIF/sketch/track/etc.
 
 ## Loading from CSV
-It's currently set to load the URLs and student info from the raw CSV online at Github. If you make changes locally in the CSV on the server it won't have any effect. I set it up this way so I could easily add more projects on my computer, push the additions to Github, and then when the server reboots (set to do so daily) it will be updated with the new projects.
+It's currently set to load the URLs and student info from the raw CSV online at Github. If you make changes locally in the CSV on the server it won't have any effect. I set it up this way so I could easily add more projects on my computer, push the additions to Github, and then when the server reboots (set to do so daily) it will be updated with the new projects. 
+
+Also, be sure to fork this project and clear out all the student project information from info.csv if you'd like to follow the same work flow.
