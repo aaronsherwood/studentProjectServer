@@ -1,5 +1,5 @@
 # Decoding Nature Server
-A quick node server to serve student work from the class.
+A quick node.js server to serve student work from the class.
 
 ## Requirements
 [Node.js](https://nodejs.org/en/)
