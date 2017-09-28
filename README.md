@@ -4,7 +4,7 @@ A quick node.js server to serve student work from the class.
 ## Requirements
 [Node.js](https://nodejs.org/en/)
 
-[Forever](https://github.com/foreverjs/forever)
+[Forever](https://github.com/foreverjs/forever) (in order to run the server headless)
 
 All other modules (as well as font) included in repo. 
 
