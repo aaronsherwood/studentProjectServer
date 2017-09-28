@@ -1,9 +1,8 @@
 var express = require('express');
 var getCSV = require('get-csv');
 var app = express();
-var counter = 0;
 var names = [];
-var urls = []
+var urls = [];
 var csvLocation = 'info.csv';	
 
 getCSV(csvLocation, {headers: false})
@@ -22,8 +21,7 @@ app.set('views', __dirname+ "/public");
 app.set('view engine', 'jade');
 
 app.get('/', function (req, res) {
-	res.render('index', {title: 'Decoding Nature Student Projects', srcStr: urls[counter], name: names[counter]});
- 	counter = (counter+1)%urls.length; //iterate through urls in a loop
+	res.render('index', {title: 'Decoding Nature Student Projects', urls: urls, names: names});
 })
 
 app.listen(process.env.PORT || 3000, function () {

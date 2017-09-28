@@ -1,5 +1,8 @@
 html
  head
+  script.
+    var urls=!{JSON.stringify(urls)} ;
+    var names=!{JSON.stringify(names)};
   script(type='text/javascript', src= '/timer.js')
   title #{title}
   style.
@@ -31,11 +34,11 @@ html
     font-size: 32px; 
     line-height: 10px;"
    }
- body
+ body(onload="load()")
   div#main
-   iframe(width='100%' height='100%', scrolling='no', frameBorder='0', seamless='seamless',webkitallowfullscreen, mozallowfullscreen, allowfullscreen, src= srcStr)
+   iframe#frame(width='100%' height='100%', scrolling='no', frameBorder='0', seamless='seamless',webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
    div#info
-    p Decoding Nature Class Work: #{name}
+    p#text
  
     
 
