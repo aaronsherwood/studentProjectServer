@@ -4,7 +4,7 @@ var app = express();
 var counter = 0;
 var names = [];
 var urls = []
-var csvLocation = 'https://raw.githubusercontent.com/aaronsherwood/decodingNatureServer/master/info.csv';	
+var csvLocation = 'info.csv';	
 
 getCSV(csvLocation, {headers: false})
   .then(rows => {
