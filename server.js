@@ -1,10 +1,12 @@
 var express = require('express');
+var getCSV = require('get-csv');
 var app = express();
 var counter = 0;
 var names = [];
 var urls = []
-const getCSV = require('get-csv');
-getCSV('https://raw.githubusercontent.com/aaronsherwood/decodingNatureServer/master/info.csv', {headers: false})
+var csvLocation = 'https://raw.githubusercontent.com/aaronsherwood/decodingNatureServer/master/info.csv';
+
+getCSV(csvLocation, {headers: false})
   .then(rows => {
   	console.log("Loading info from CSV file...")
   	console.log(rows);
@@ -14,7 +16,6 @@ getCSV('https://raw.githubusercontent.com/aaronsherwood/decodingNatureServer/mas
   	}
   	console.log("Done");
   });
-
 
 app.use(express.static(__dirname));
 app.set('views', __dirname+ "/public");
