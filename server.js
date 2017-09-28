@@ -4,7 +4,7 @@ var app = express();
 var counter = 0;
 var names = [];
 var urls = []
-var csvLocation = 'https://raw.githubusercontent.com/aaronsherwood/decodingNatureServer/master/info.csv';
+var csvLocation = 'https://raw.githubusercontent.com/aaronsherwood/decodingNatureServer/master/info.csv';	
 
 getCSV(csvLocation, {headers: false})
   .then(rows => {
@@ -26,6 +26,6 @@ app.get('/', function (req, res) {
  	counter = (counter+1)%urls.length; //iterate through urls in a loop
 })
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
 	console.log('Listening on port 3000!')
 })
