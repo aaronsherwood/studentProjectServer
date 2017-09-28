@@ -1,0 +1,30 @@
+{
+  "name": "decodingnatureserver",
+  "version": "1.0.0",
+  "description": "student project server",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "get-csv": "^3.0.3",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronsherwood/studentProjectServer.git"
+  },
+  "keywords": [
+    "student",
+    "server"
+  ],
+  "author": "aaron sherwood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronsherwood/studentProjectServer/issues"
+  },
+  "homepage": "https://github.com/aaronsherwood/studentProjectServer#readme"
+}
