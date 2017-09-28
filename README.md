@@ -23,4 +23,4 @@ Anything! The beauty of this method is that you can show any type of documentati
 ## Loading from CSV
 It's currently set to load the URLs and student info from the raw CSV online at Github. If you make changes locally in the CSV on the server it won't have any effect. I set it up this way so I could easily add more projects on my computer, push the additions to Github, and then, when the server reboots (set to do so daily), it will be updated with the new projects. 
 
-If you'd like to use a similar workflow, fork this project and be sure to clear out all the existing student project information from info.csv. Otherwise just clone and be happy.
+If you'd like to use a similar workflow, fork this project and be sure to clear out all the existing student project information in info.csv. Otherwise just clone and be happy.
