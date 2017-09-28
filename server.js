@@ -21,7 +21,7 @@ app.set('views', __dirname+ "/public");
 app.set('view engine', 'jade');
 
 app.get('/', function (req, res) {
-    res.render('index', {title: 'Decoding Nature Student Projects', srcStr: urls[counter], name: names[counter]});
+	res.render('index', {title: 'Decoding Nature Student Projects', srcStr: urls[counter], name: names[counter]});
  	counter = (counter+1)%urls.length; //iterate through urls in a loop
 })
 
