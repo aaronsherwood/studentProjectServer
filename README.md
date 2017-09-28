@@ -1,5 +1,5 @@
 # Student Project Server
-A simple node.js server to serve student work full screen, and auto advance through the projects. 
+A simple node.js server to show student work full screen, and auto advance through the projects. 
 
 ## Requirements
 [Node.js](https://nodejs.org/en/) ver. 8.6.0++
