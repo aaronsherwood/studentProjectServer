@@ -1,5 +1,5 @@
 # Student Project Server
-A simple node.js server made for my students in the [Interactive Media Program](http://nyuad.im/) at NYUAD. It shows their work full screen, and auto advances through their projects. Here's an [example](http://decodingnaturestudentwork.herokuapp.com/), taken from my [Decoding Nature](http://decodingnature.nyuad.im/weekly-schedule/) class.
+A simple node.js server made for my students in the [Interactive Media Program](http://nyuad.im/) at NYUAD. It shows their work full screen, and auto advances through their projects. Here's an [example](http://decodingnaturestudentwork.herokuapp.com/) of it in use, showing student work from my [Decoding Nature](http://decodingnature.nyuad.im/weekly-schedule/) class.
 
 ## Requirements
 [Node.js](https://nodejs.org/en/) ver. 8.6.0++
