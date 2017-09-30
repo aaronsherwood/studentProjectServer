@@ -1,5 +1,5 @@
 var counter = 0;
-var minutesUntilSwitchProject = 1;
+var minutesUntilNextProject = 1;
 var timer;
 
 var load = function(){
@@ -7,9 +7,9 @@ var load = function(){
 	resetTimer();
 }
 
-var switchProject = function(){
+var nextProject = function(){
 	counter = (counter+1) % urls.length;
-	setInfo();	
+	setInfo();
 	resetTimer();
 }
 
@@ -18,13 +18,13 @@ var previousProject = function(){
 	if (counter < 0) counter = urls.length-1;
 	if (counter >= urls.length) counter = 0;
 	setInfo();
-	resetTimer();	
+	resetTimer();
 }
 
 var resetTimer = function(){
 	window.clearInterval(timer);
 	//millis * seconds * minutes (minutes is imporant part, change that above)
-	timer = setInterval(switchProject, 1000*60*minutesUntilSwitchProject);
+	timer = setInterval(nextProject, 1000*60*minutesUntilNextProject);
 }
 
 var setInfo = function(){
