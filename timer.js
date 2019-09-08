@@ -37,7 +37,7 @@ var setUrl = function(){
 }
 
 var setText = function(){
-	var text = "Decoding Nature Class Work: ";
+	var text = "Class Work: ";
 	text += names[counter];
 	document.getElementById('text').innerHTML = text;
 }
