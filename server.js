@@ -32,7 +32,6 @@ getCSV(csvLocation, {headers: false})
         urls3.push(rows[i][0]);
     		names3.push(rows[i][1]);
       }
-
   	}
   	console.log("Done");
   });
