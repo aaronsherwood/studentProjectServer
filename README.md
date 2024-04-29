@@ -2,13 +2,13 @@
 A simple node.js server made for my students in the [Interactive Media Program](http://nyuad.im/) at NYUAD. It shows their work full screen, and auto advances through their projects. Here's an [example](http://decodingnaturestudentwork.herokuapp.com/) of it in use, showing student work from my [Decoding Nature](http://decodingnature.nyuad.im/weekly-schedule/) class.
 
 ## Requirements
-[Node.js](https://nodejs.org/en/) ver. 8.6.0++
-
-All modules are included in the repo. 
-
-I know I know, I should do these all as sub modules...
+[Node.js](https://nodejs.org/en/) 
 
 ## Usage
+Run `npm update` to grab the node modules initially.
+
+Then do `node server.js` to run the server.
+
 Enter fullscreen URLs of student work in the info.csv file, as well as the names of the students for each project. The rest is magic.
 
 ## What Types of Things Can Be Shown
